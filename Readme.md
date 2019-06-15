@@ -33,7 +33,7 @@ router.get('/test', async (ctx) => {
 app.use(beforeResponse({
   beforeResponse: function(ctx) {
     console.log('hooked, ctx.endTime:', ctx.endTime);
-	}
+  }
 }));
 
 app.use(router.routes());
