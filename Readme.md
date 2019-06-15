@@ -20,19 +20,19 @@ const beforeResponse = require('koa-before-response');
 const app = new koa();
 
 app.use(async function(ctx, next) {
-	ctx.startTime = 'foo';
-	await next();
-	ctx.endTime = 'bar';
+  ctx.startTime = 'foo';
+  await next();
+  ctx.endTime = 'bar';
 });
 
 const router = new Router();
 router.get('/test', async (ctx) => {
-	ctx.body = { foo: 'bar'}
+  ctx.body = { foo: 'bar'}
 })
 
 app.use(beforeResponse({
-	beforeResponse: function(ctx) {
-		console.log('hooked, ctx.endTime:', ctx.endTime);
+  beforeResponse: function(ctx) {
+    console.log('hooked, ctx.endTime:', ctx.endTime);
 	}
 }));
 
