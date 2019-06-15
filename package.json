@@ -1,0 +1,23 @@
+{
+  "name": "koa-before-response",
+  "version": "1.0.0",
+  "description": "hook before response",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cool-firer/koa-before-response.git"
+  },
+  "keywords": [
+    "response",
+    "hook"
+  ],
+  "author": "cool-firer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cool-firer/koa-before-response/issues"
+  },
+  "homepage": "https://github.com/cool-firer/koa-before-response#readme"
+}
